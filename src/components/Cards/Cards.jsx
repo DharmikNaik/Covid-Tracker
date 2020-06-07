@@ -5,7 +5,6 @@ import CountUp from "react-countup";
 import cx from "classnames";
 
 const Cards = (props) => {
-  console.log(props);
   const {
     data: { recovered, confirmed, deaths, lastUpdate },
   } = props;
