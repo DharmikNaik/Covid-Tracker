@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { fetchDailyData } from "../../api";
 import { Bar, Line } from "react-chartjs-2";
 import styles from "./Chart.module.css";
-import { red } from "@material-ui/core/colors";
 
 const Chart = () => {
   const [dailyData, setDailyData] = useState([]);
@@ -11,7 +10,6 @@ const Chart = () => {
     const fetchAPI = async () => {
       setDailyData(await fetchDailyData());
     };
-    console.log(dailyData);
     fetchAPI();
   });
 
